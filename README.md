@@ -216,8 +216,6 @@ kestrel-project/
     ├── decisions.md        # Feature timing & data extraction sheet
     ├── log.md              # Engineering time tracking log
     ├── ai-log.md           # AI tooling usage & audit trail
-    ├── form-answers.md     # Pre-mapped task submission answers
-    └── recording_script.md # 3-minute video recording outline
 ```
 
 ---
