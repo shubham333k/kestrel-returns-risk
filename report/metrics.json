@@ -1,0 +1,53 @@
+{
+  "holdout_n": 2101,
+  "holdout_positives": 242,
+  "holdout_return_rate": 0.1152,
+  "majority_class_accuracy": 0.8848,
+  "models": {
+    "B0_constant": {
+      "pr_auc": 0.1152,
+      "roc_auc": 0.5
+    },
+    "B1_logistic": {
+      "pr_auc": 0.3754,
+      "roc_auc": 0.759
+    },
+    "M1_hgb": {
+      "pr_auc": 0.3261,
+      "roc_auc": 0.7395
+    }
+  },
+  "chosen_model": "LogisticRegression",
+  "chosen_model_holdout": {
+    "pr_auc": 0.3754,
+    "pr_auc_ci_95": [
+      0.3177,
+      0.4374
+    ],
+    "roc_auc": 0.759,
+    "threshold": 0.648508,
+    "precision_at_threshold": 0.3289,
+    "recall_at_threshold": 0.4091,
+    "f1_at_threshold": 0.3646,
+    "accuracy": 0.8358,
+    "confusion_matrix": [
+      [
+        1657,
+        202
+      ],
+      [
+        143,
+        99
+      ]
+    ]
+  },
+  "leakage_excluded": [
+    "last_service_event_type (REVERSE_PICKUP = 100% return rate -- post-outcome)",
+    "pickup_scheduled_at (91.6% returned when non-null -- post-outcome logistics)",
+    "delivery_note (free text / PII)",
+    "delivery_pincode (PII-adjacent)",
+    "source (dedup only)",
+    "customer_id (direct identifier)"
+  ],
+  "dedup_rows_removed": 651
+}
