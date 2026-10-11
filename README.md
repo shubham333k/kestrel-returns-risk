@@ -221,9 +221,3 @@ kestrel-project/
 ```
 
 ---
-
-## 📋 Deliverables Submitted via Task Portal
-
-The following items are prepared in the repository and ready for portal submission:
-1. **Walkthrough Video:** 3-minute walkthrough script prepared in [`notes/recording_script.md`](notes/recording_script.md). Recorded browser demo video saved in repository artifacts.
-2. **Task Portal Form Responses:** Pre-mapped answers verified against the live schema in [`notes/form-answers.md`](notes/form-answers.md).
